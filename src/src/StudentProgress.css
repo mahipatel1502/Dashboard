@@ -1,0 +1,355 @@
+/* 
+  .course-title h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .course-title progress {
+    width: 200px;
+    height: 8px;
+    margin-top: 5px;
+  }
+  
+  .course-stats {
+    display: flex;
+    align-items: center;
+  }
+  
+  .course-stats span {
+    margin-right: 15px;
+    font-size: 1rem;
+  }
+  
+  .resume-button {
+    background-color: #6C63FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .resume-button:hover {
+    background-color: #5753d3;
+  }
+  
+  .status {
+    margin-bottom: 20px;
+  }
+  
+  .status h2 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+  }
+  
+  .status-cards {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .status-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+  }
+  
+  .circle-progress {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: conic-gradient(#6C63FF 0% calc(var(--progress) * 1%), #e4e4e4 calc(var(--progress) * 1%));
+  }
+  
+  .status-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .courses {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .courses h2 {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #f4f7fc;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .tab.active {
+    background-color: #6C63FF;
+    color: white;
+  }
+  
+  .courses-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .courses-table th,
+  .courses-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .courses-table th {
+    background-color: #f4f7fc;
+    font-weight: bold;
+  }
+  
+  .courses-table td progress {
+    width: 100px;
+    height: 8px;
+  }
+  
+  .courses-table td span {
+    display: block;
+    margin: 5px 0;
+    font-size: 0.875rem;
+  }
+   */
+   /* Course Title Section */
+    .dashboard{
+        margin-left: 218px;
+    }
+
+    .course-title{
+        padding-top: 20px;
+    }
+.course-title h1 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .course-title progress {
+    width: 250px;
+    height: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    appearance: none;
+    background-color: #f0f0f0;
+  }
+  
+  .course-title progress::-webkit-progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .course-title progress::-webkit-progress-value {
+    background-color: #6C63FF;
+    border-radius: 5px;
+  }
+  
+  /* Course Stats */
+  .course-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .course-stats span {
+    margin-right: 20px;
+    font-size: 1.1rem;
+    color: #f9f9f9;
+  }
+  
+  .resume-button {
+    background-color: #6C63FF;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .resume-button:hover {
+    background-color: #5753d3;
+    transform: scale(1.05);
+  }
+  
+  /* Status Section */
+  .status {
+    display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  margin-bottom: 30px;
+  }
+  
+  .status h2 {
+    font-size: 30px;
+  font-weight: 500;
+  font-family: 'monospace';
+  color: #fcf9f9;
+  margin-bottom: 20px;
+  margin-top: 70px;
+  }
+  
+  .status h2 :hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .status-cards {
+    display: flex;
+  gap: 30px;
+  justify-content: center; /* Center the cards horizontally */
+  width: 100%; /* Take full width */
+  }
+  
+  /* Status Card */
+  .status-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    max-width: 300px; /* Add max-width for the cards */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .status-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  .circle-progress {
+    width: 80px;
+    height: 80px;
+    margin: 15px auto;
+    border-radius: 50%;
+    background: conic-gradient(#6C63FF calc(var(--progress) * 1%), #e4e4e4 calc(var(--progress) * 1%));
+    position: relative;
+  }
+  
+  .circle-progress::after {
+    content: attr(data-progress) "%";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .status-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #444;
+  }
+  
+  /* Courses Section */
+  .courses {
+    background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px; /* Set a max-width for the courses container */
+  margin: 0 auto; /* Center it */
+  }
+  
+  .courses h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 25px;
+  }
+  
+  .tab {
+    padding: 12px 25px;
+    cursor: pointer;
+    border: none;
+    background-color: #f4f7fc;
+    margin-right: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab.active {
+    background-color: #6C63FF;
+    color: white;
+  }
+  
+  .tab:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Courses Table */
+  .courses-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  .courses-table th,
+  .courses-table td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .courses-table th {
+    background-color: #f4f7fc;
+    font-weight: 600;
+  }
+  
+  .courses-table td progress {
+    width: 120px;
+    height: 10px;
+    border-radius: 5px;
+    appearance: none;
+    background-color: #f0f0f0;
+  }
+  
+  .courses-table td progress::-webkit-progress-bar {
+    background-color: #f0f0f0;
+  }
+  
+  .courses-table td progress::-webkit-progress-value {
+    background-color: #6C63FF;
+  }
+  
+  .courses-table td span {
+    display: block;
+    margin: 8px 0;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
